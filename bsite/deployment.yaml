@@ -15,7 +15,7 @@ spec:
         app: bsite
     spec:
       containers:
-      - image: sathishbs/bsite:1.13
+      - image: sathishbs/bsite:1.14
         name: bsite
         ports:
         - containerPort: 80
