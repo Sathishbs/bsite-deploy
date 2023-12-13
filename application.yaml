@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bsite
+  name: vebsite
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
   # Add this finalizer ONLY if you want these to cascade delete.
@@ -12,7 +12,7 @@ metadata:
     # - resources-finalizer.argocd.argoproj.io/background
   # Add labels to your application object.
   labels:
-    name: bsite
+    name: vebsite
 spec:
   # The project the application belongs to.
   project: default
@@ -30,12 +30,12 @@ spec:
     # or cluster name
     # name: in-cluster
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    namespace: bsitens
+    namespace: vebsitens
     
   # Extra information to show in the Argo CD Application details tab
   info:
     - name: 'default-web-site'
-      value: 'https://sathish.uk'
+      value: 'https://pujikrish.com'
       
   # Sync policy
   syncPolicy:
