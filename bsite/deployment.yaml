@@ -15,7 +15,7 @@ spec:
         app: bsite
     spec:
       containers:
-      - image: sathishbs/bsite:buildTag
+      - image: sathishbs/bsite:46
         name: bsite
         ports:
         - containerPort: 80
